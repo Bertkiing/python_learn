@@ -1,4 +1,8 @@
- # A first Python script_from_examples(s)
- print(2 ** 100)
- x = 'hello!'
- print (x * 8)
+print(1)
+print("hello,world")
+x = "hello "
+print(x * 8)
+
+import sys  # Load  a library module
+sysInfo = sys.platform
+print(sysInfo)
