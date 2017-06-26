@@ -1,4 +1,5 @@
 class Student:
+    gender = 'female'
     # Python中的构造函数__init__()
 
     def __init__(self, age):
@@ -18,6 +19,8 @@ class Student:
 student1 = Student(16)
 student1.add_age()
 student1.is_adult()
+print(student1.gender)
 
 student2 = Student(18)
 student2.is_adult()
+print(student2.gender)
