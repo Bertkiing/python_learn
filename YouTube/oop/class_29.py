@@ -1,18 +1,23 @@
 class Student:
-    age = 17
-    def addAge(self):
+    # Python中的构造函数__init__()
+
+    def __init__(self, age):
+        self.age = age
+
+    def add_age(self):
         self.age += 1
         print(self.age)
 
-    def isAdult(self):
+    def is_adult(self):
         if self.age >= 18:
             print('You are a adult')
         else:
             print('You are young')
 
-student1 = Student()
-student1.addAge()
-student1.isAdult()
 
-student2 = Student()
-student2.isAdult()
+student1 = Student(16)
+student1.add_age()
+student1.is_adult()
+
+student2 = Student(18)
+student2.is_adult()
